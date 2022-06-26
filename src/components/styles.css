@@ -39,3 +39,15 @@
     background-color: rgb(245, 238, 238);
 }
 
+.input_submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.todos {
+    display:flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap:wrap;
+}
+
