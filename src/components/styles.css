@@ -51,3 +51,51 @@
     flex-wrap:wrap;
 }
 
+.todos_single {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=1480&t=st=1656282104~exp=1656282704~hmac=755e6e9d86be3d1b22e12e5321e3e24070bd84fa45e7c219457605c52c6bd5d1");
+    transition: 0.2s;
+  }
+  
+  .drag {
+    box-shadow: 0 0 20px black;
+  }
+  
+  .todos_single:hover {
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
+  }
+  
+  .todos_single--text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+  }
+  
+  .todos_single--text:focus {
+    outline: none;
+  }
+  
+  .icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 700px) {
+    .input {
+      width: 95%;
+    }
+    .container {
+      width: 95%;
+      flex-direction: column;
+    }
+    .todos {
+      width: 95%;
+      margin-bottom: 10px;
+    }
+  }
